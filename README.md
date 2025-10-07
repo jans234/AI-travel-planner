@@ -34,10 +34,15 @@ It supports full Docker deployment, making it lightweight, portable, and easy to
 
 travelapi/
 ├── api.py # Main FastAPI app (routes and endpoints)
+
 ├── app.py # Core logic (chatbot, data retrieval, deletion)
+
 ├── requirements.txt # Python dependencies
+
 ├── Dockerfile # Docker setup file
+
 ├── interface/ # (Optional) Frontend interface files (HTML, CSS, JS)
+
 └── README.md # Project documentation
 
 
@@ -59,4 +64,5 @@ pip install -r requirements.txt
 ```
 uvicorn api:app --host 0.0.0.0 --port 8000
 ```
+
 

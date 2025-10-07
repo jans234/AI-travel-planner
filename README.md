@@ -64,5 +64,13 @@ pip install -r requirements.txt
 ```
 uvicorn api:app --host 0.0.0.0 --port 8000
 ```
-
+## 🐳 Run with Docker
+## 1️⃣ Build the Docker image
+```
+docker build -t travelapi .
+```
+## 2️⃣ Run the container
+```
+docker run -p 8000:8000 travelapi
+```
 

@@ -34,15 +34,10 @@ It supports full Docker deployment, making it lightweight, portable, and easy to
 
 travelapi/
 ├── api.py # Main FastAPI app (routes and endpoints)
-
 ├── app.py # Core logic (chatbot, data retrieval, deletion)
-
 ├── requirements.txt # Python dependencies
-
 ├── Dockerfile # Docker setup file
-
 ├── interface/ # (Optional) Frontend interface files (HTML, CSS, JS)
-
 └── README.md # Project documentation
 
 
@@ -57,8 +52,11 @@ cd travelapi
 ```
 
 ## 2️⃣ Install Dependencies
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 ## 3️⃣ Run the API
-```uvicorn api:app --host 0.0.0.0 --port 8000
 ```
+uvicorn api:app --host 0.0.0.0 --port 8000
+```
+

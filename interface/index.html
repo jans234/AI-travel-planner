@@ -758,7 +758,7 @@
     startLoader();
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/chat", {
+      const response = await fetch("https://ai-travel-planner-cldt.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -811,7 +811,7 @@
 
   async function loadTripHistory() {
     try {
-      const response = await fetch("http://127.0.0.1:8000/threads", {
+      const response = await fetch("https://ai-travel-planner-cldt.onrender.com/threads", {
         method: "GET",
         headers: { "accept": "application/json" }
       });
@@ -864,7 +864,7 @@
       // Clear messages
       document.getElementById("messages").innerHTML = "";
       
-      const response = await fetch(`http://127.0.0.1:8000/thread/chats?thread_id=${thread_id}`, {
+      const response = await fetch(`https://ai-travel-planner-cldt.onrender.com/thread/chats?thread_id=${thread_id}`, {
         method: "GET",
         headers: { "accept": "application/json" }
       });
@@ -928,4 +928,5 @@
   addMessage("👋 Welcome to Itinerary GPT! Fill in your trip details on the left and click 'Plan My Trip' to begin.", "bot");
   </script>
 </body>
+
 </html>
